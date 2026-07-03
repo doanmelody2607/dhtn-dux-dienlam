@@ -1,6 +1,5 @@
 import classNames from 'classnames/bind';
 import { FC, PropsWithChildren } from 'react';
-import Header from '~/layouts/components/Header';
 import styles from './HeaderOnly.module.scss';
 
 const cx = classNames.bind(styles);

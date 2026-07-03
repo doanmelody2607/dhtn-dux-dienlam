@@ -1,10 +1,7 @@
 import { AppRoute } from '~/commons/interfaces/routes';
 import Home from '~/pages/Home';
-import LichHop from '~/pages/LichHop';
-import NhiemVu from '~/pages/NhiemVu';
 import OutgoingDoc, { MyDraft } from '~/pages/OutgoingDoc';
 import SubmissionForm from '~/pages/SubmissionForm';
-import VanBanDen, { VanBanBiTraLai, VanBanChoXuLy, VanBanDaXuLy } from '~/pages/VanBanDen';
 
 const appRoutes: AppRoute[] = [
     {

@@ -1,14 +1,10 @@
 import { FC } from 'react';
-import Image from '~/components/Image';
 import images from '~/assets/images';
-import classNames from 'classnames/bind';
-import styles from './MyDraft.module.scss';
 import Card from '~/components/Card';
+import Highlight from '~/components/Highlight';
+import Image from '~/components/Image';
 import ImageWithFigcaption from '~/components/ImageWithFigcaption';
 import Step from '~/components/Step';
-import Highlight from '~/components/Highlight';
-
-const cx = classNames.bind(styles);
 
 interface MyDraftProps {}
 
