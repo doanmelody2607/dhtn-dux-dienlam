@@ -3,7 +3,6 @@ import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
 import { headerTitles } from '~/config/routes';
 import styles from './Header.module.scss';
-import LiquidGlass from '~/components/LiquidGlass';
 
 const cx = classNames.bind(styles);
 
