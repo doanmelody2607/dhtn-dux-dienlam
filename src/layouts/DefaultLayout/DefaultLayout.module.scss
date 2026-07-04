@@ -28,11 +28,10 @@
 .content {
     width: 100%;
     max-width: 1200px;
-    margin: var(--default-layout-header-height) auto 0;
+    margin: var(--default-layout-header-height) auto 0px;
     padding: 20px 0;
 
     @include mobile {
-        margin: 0;
         padding: 10px;
     }
 }
