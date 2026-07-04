@@ -46,8 +46,9 @@ const Home: FC<HomeProps> = () => {
                     </li>
 
                     <li>
-                        Bấm nút <strong>Đăng nhập</strong> màu đỏ, mã OTP (6 số) sẽ được gửi về SĐT
-                        ngay lập tức, nhập mã OTP vào hệ thống để hoàn thành việc đăng nhập.
+                        Click vào <Highlight content="Đăng nhập" highlightType="do" />, mã OTP (6
+                        số) sẽ được gửi về SĐT ngay lập tức, nhập mã OTP vào hệ thống để hoàn thành
+                        việc đăng nhập.
                     </li>
 
                     <ImageWithFigcaption

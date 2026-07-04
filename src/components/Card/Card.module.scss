@@ -1,22 +1,21 @@
+@use '../GlobalStyles/abstracts/mixins' as *;
+
 .card {
-    background: #fff;
-    border-radius: 8px;
     padding: 28px;
     margin-bottom: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    color: var(--white);
 
     h2 {
         font-size: 18px;
-        color: var(--color_1);
-        border-bottom: 2px solid #ffcdd2;
+        border-bottom: 2px solid var(--white);
         padding-bottom: 8px;
         margin-bottom: 16px;
     }
 
     h3 {
         font-size: 15px;
-        color: var(--color_2);
         margin: 20px 0 10px;
         padding-left: 10px;
         border-left: 3px solid #ef5350;
@@ -29,25 +28,28 @@
         font-weight: 700;
     }
 
+    li,
     p {
         font-size: 13px;
-        color: var(--color_4);
         line-height: 1.8;
     }
 
-    li {
-        font-size: 13px;
-        color: var(--color_4);
-        line-height: 1.8;
-    }
-
+    ol,
     ul {
         padding-left: 20px;
         margin-bottom: 12px;
     }
 
-    ol {
-        padding-left: 20px;
-        margin-bottom: 12px;
+    @include mobile {
+        padding: 10px;
+
+        h3 {
+            margin-top: 10px;
+        }
+
+        ol,
+        ul {
+            padding: 0;
+        }
     }
 }

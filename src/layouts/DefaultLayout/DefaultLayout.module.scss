@@ -1,3 +1,5 @@
+@use '../../components/GlobalStyles/abstracts/mixins' as *;
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -16,11 +18,21 @@
 .right-section {
     flex: 1;
     margin-left: var(--default-sidebar-width);
-    position: relative;
+    background: url(../../assets/images/luquid_glass_bg001.webp) center center;
+
+    @include mobile {
+        margin: 0;
+    }
 }
 
 .content {
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: var(--default-layout-header-height) auto 0;
     padding: 20px 0;
+
+    @include mobile {
+        margin: 0;
+        padding: 10px;
+    }
 }

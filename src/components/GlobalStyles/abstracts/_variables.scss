@@ -1,0 +1,28 @@
+@import 'normalize.css';
+
+:root {
+    --primary: #fe2c55;
+    --text-color: #181623;
+    --white: #fff;
+    --black: #000;
+
+    --color_1: #b71c1c;
+    --color_2: #c62828;
+    --color_3: #d84315;
+    --color_4: #4a5568;
+    --color_5: #fff;
+    --color_6: #14532d;
+    --color_7: #78350f;
+    --color_8: #7f1d1d;
+    --color_9: #475569;
+    --color_10: #64748b;
+    --color_11: #856404;
+    --color_12: #334155;
+
+    --font-family: 'Inter', sans-serif;
+
+    --default-layout-width: 100%;
+    --default-layout-header-height: 60px;
+    --default-layout-horizontal-spacer: 24px;
+    --default-sidebar-width: 280px;
+}

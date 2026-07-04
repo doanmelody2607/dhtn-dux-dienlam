@@ -1,8 +1,7 @@
 .wrapper {
-    margin: 16px 0;
-    position: relative;
     display: inline-block;
-    border-radius: 12px;
+    border-radius: 16px;
+    padding: 6px 6px 0;
 
     img {
         display: block;
@@ -13,7 +12,7 @@
     }
 
     .figcaption {
-        background: #f8fafc;
+        // background: #f8fafc;
         padding: 8px 14px;
         font-size: 11px;
         color: var(--color_10);
@@ -22,40 +21,28 @@
         font-weight: 500;
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        inset: -4px;
-        border-radius: 16px;
-        border: 2px solid #2da8ff;
-        box-shadow: 0 0 10px #2da8ff;
-        // box-shadow:
-        //     0 0 10px #2da8ff,
-        //     0 0 20px #2da8ff,
-        //     0 0 20px rgba(45, 168, 255, 0.8),
-        //     0 0 20px rgba(45, 168, 255, 0.5);
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     inset: -4px;
+    //     border-radius: 16px;
+    //     border: 2px solid #2da8ff;
+    //     box-shadow: 0 0 10px #2da8ff;
+    //     // box-shadow:
+    //     //     0 0 10px #2da8ff,
+    //     //     0 0 20px #2da8ff,
+    //     //     0 0 20px rgba(45, 168, 255, 0.8),
+    //     //     0 0 20px rgba(45, 168, 255, 0.5);
 
-        pointer-events: none;
-        z-index: 1;
-    }
+    //     pointer-events: none;
+    //     z-index: 1;
+    // }
 }
 
 // .wrapper::before {
 //     animation: neonGlow 2s ease-in-out infinite alternate;
 // }
 
-@keyframes neonGlow {
-    from {
-        box-shadow:
-            0 0 6px #2da8ff,
-            0 0 15px #2da8ff,
-            0 0 30px rgba(45, 168, 255, 0.6);
-    }
-
-    to {
-        box-shadow:
-            0 0 12px #2da8ff,
-            0 0 30px #2da8ff,
-            0 0 60px rgba(45, 168, 255, 0.9);
-    }
+.liquid-image {
+    margin-bottom: 12px;
 }

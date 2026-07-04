@@ -1,21 +1,39 @@
+@use '../../../components/GlobalStyles/abstracts/mixins' as *;
+
 .wrapper {
     height: var(--default-layout-header-height);
-    background: #fff;
     border-bottom: 1px solid #e0e0e0;
     padding: 0 20px;
-    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+
+    // backdrop-filter: blur(1px) url(#lg-filter) blur(2px) saturate(1.5) brightness(1.1);
+    // -webkit-backdrop-filter: blur(8px) saturate(1.8) brightness(1.15) contrast(1.05);
+    // box-shadow:
+    //     inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    //     inset 1.5px 1.5px 0 rgba(255, 255, 255, 0.5),
+    //     inset 0 0 12px rgba(255, 255, 255, 0.2),
+    //     0 8px 32px rgba(0, 0, 0, 0.2);
+
+    box-shadow: inset 0 0 12px -2px rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    filter: url(#glass-distortion);
+    -webkit-filter: url(#glass-distortion);
+
+    position: fixed;
     top: 0;
-    left: 0;
-    z-index: 1000;
+    left: var(--default-sidebar-width);
+    width: calc(100vw - var(--default-sidebar-width));
+    z-index: 9999;
 
     .title {
         font-size: 14px;
         font-weight: 700;
-        color: #b71c1c;
+        color: var(--color_6);
     }
 
     .user-role {
@@ -25,5 +43,10 @@
         border-radius: 20px;
         font-size: 11px;
         font-weight: 700;
+    }
+
+    @include mobile {
+        left: 0;
+        width: 100%;
     }
 }

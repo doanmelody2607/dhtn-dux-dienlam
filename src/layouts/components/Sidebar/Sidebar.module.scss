@@ -1,3 +1,5 @@
+@use '../../../components/GlobalStyles/abstracts/mixins' as *;
+
 .wrapper {
     width: var(--default-sidebar-width);
     padding: 0px 0px;
@@ -21,6 +23,10 @@
     .menu-wrapper {
         padding: 0;
     }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .sidebar-header {
@@ -29,7 +35,7 @@
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 12px;
 
     .co-dang {
         width: 40px;
@@ -37,14 +43,14 @@
     }
 
     .title {
-        font-size: 12px;
+        font-size: 1.4rem;
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
 
     .description {
-        font-size: 10px;
+        font-size: 1rem;
         opacity: 0.8;
         margin-top: 2px;
     }

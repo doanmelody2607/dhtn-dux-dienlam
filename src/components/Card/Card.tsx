@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import { FC, PropsWithChildren } from 'react';
 import styles from './Card.module.scss';
+import LiquidGlass from '../LiquidGlass';
 
 const cx = classNames.bind(styles);
 
@@ -11,12 +12,14 @@ type CardProps = PropsWithChildren<{
 
 const Card: FC<CardProps> = ({ cardTitle, description, children }) => {
     return (
-        <div className={cx('card')}>
-            <h2>{cardTitle}</h2>
-            <p>{description}</p>
+        <LiquidGlass>
+            <div className={cx('card')}>
+                <h2>{cardTitle}</h2>
+                <p>{description}</p>
 
-            {children}
-        </div>
+                {children}
+            </div>
+        </LiquidGlass>
     );
 };
 
