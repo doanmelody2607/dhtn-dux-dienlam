@@ -11,16 +11,17 @@
 
     .title {
         font-size: 18px;
-        border-bottom: 2px solid var(--white);
+        border-bottom: 2px solid brown;
         padding-bottom: 8px;
         margin-bottom: 16px;
-        color: var(--color_1);
+        color: brown;
     }
 
     .desc {
         font-size: 13px;
         line-height: 1.8;
         margin-bottom: 10px;
+        color: var(--text-color);
     }
 
     h3 {

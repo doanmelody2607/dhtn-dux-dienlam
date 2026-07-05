@@ -18,7 +18,7 @@
 .right-section {
     flex: 1;
     margin-left: var(--default-sidebar-width);
-    background: url(../../assets/images/luquid_glass_bg001.webp) center center;
+    background: url(../../assets/images/liquid_glass_bg001.webp) center center;
 
     .overlay {
         position: fixed;
@@ -37,7 +37,7 @@
         right: 10px;
         font-size: 2.4rem;
         color: var(--white);
-        transition: transform 0.4s ease;
+        transition: all 0.4s ease;
 
         transform: translateX(100px);
     }
