@@ -24,3 +24,39 @@ a {
     text-decoration: none;
     color: var(--text-color);
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.25rem;
+    border-radius: 16px;
+}
+
+th,
+td {
+    padding: 8px 24px;
+}
+
+th {
+    // background: #f1f5f9;
+
+    text-align: left;
+    font-weight: 700;
+}
+
+td {
+    color: var(--color_12);
+}
+
+tr {
+    color: var(--white);
+    border-bottom: 1px solid #e2e8f0;
+
+    &:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+}

@@ -18,6 +18,7 @@ const Header: FC<HeaderProps> = ({ className }) => {
     return (
         <header className={classes}>
             <h2 className={cx('title')}>
+                <span className={cx('menu-bars')}>☰</span>
                 {headerTitles.get(pathname) ?? 'Sổ tay Văn phòng Đảng ủy xã Diên Lâm'}
             </h2>
             <h4 className={cx('user-role')}>Liên hệ: 1900.100có</h4>

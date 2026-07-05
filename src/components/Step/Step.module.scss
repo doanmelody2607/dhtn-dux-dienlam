@@ -1,5 +1,9 @@
 @use '../../components/GlobalStyles/abstracts/mixins' as *;
 
+.liquid-step {
+    margin-bottom: 10px;
+}
+
 .wrapper {
     counter-reset: step;
     padding: 0;

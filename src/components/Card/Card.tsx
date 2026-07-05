@@ -12,10 +12,10 @@ type CardProps = PropsWithChildren<{
 
 const Card: FC<CardProps> = ({ cardTitle, description, children }) => {
     return (
-        <LiquidGlass>
+        <LiquidGlass className={cx('liquid-card')}>
             <div className={cx('card')}>
-                <h2>{cardTitle}</h2>
-                <p>{description}</p>
+                <h2 className={cx('title')}>{cardTitle}</h2>
+                <p className={cx('desc')}>{description}</p>
 
                 {children}
             </div>

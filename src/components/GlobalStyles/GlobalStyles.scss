@@ -20,34 +20,6 @@
     margin: 4px 0;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 12px 0;
-    font-size: 12.5px;
-}
-
-th {
-    background: #f1f5f9;
-    color: --color_9;
-    padding: 8px 10px;
-    text-align: left;
-    font-weight: 700;
-    border-bottom: 2px solid #e2e8f0;
-}
-
-td {
-    padding: 8px 10px;
-    border-bottom: 1px solid #e2e8f0;
-    color: --color_12;
-}
-
-tr {
-    &:nth-child(even) {
-        background: #f8fafc;
-    }
-}
-
 // .image-wrapper {
 //     position: relative;
 //     display: inline-block;
