@@ -14,6 +14,7 @@
         border-bottom: 2px solid var(--white);
         padding-bottom: 8px;
         margin-bottom: 16px;
+        color: var(--color_1);
     }
 
     .desc {
@@ -26,7 +27,8 @@
         font-size: 15px;
         margin: 20px 0px 12px;
         padding-left: 10px;
-        border-left: 3px solid #ef5350;
+        color: var(--color_11);
+        border-left: 3px solid var(--color_11);
     }
 
     h4 {

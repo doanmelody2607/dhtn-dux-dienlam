@@ -10,7 +10,7 @@ interface MyDraftProps {}
 const MyDraft: FC<MyDraftProps> = () => {
     return (
         <Card
-            cardTitle="📥 DỰ THẢO CỦA TÔI"
+            cardTitle="📥 Dự thảo của tôi"
             description="Đây là danh sách tất cả dự thảo do bạn tạo ra, thông qua các trường thông tin trên bảng bạn có thể theo dõi được các dự thảo dễ dàng."
         >
             <LiquidGlass>

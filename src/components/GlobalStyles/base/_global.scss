@@ -44,12 +44,8 @@ th {
     font-weight: 700;
 }
 
-td {
-    color: var(--color_12);
-}
-
 tr {
-    color: var(--white);
+    color: var(--text-color);
     border-bottom: 1px solid #e2e8f0;
 
     &:nth-child(even) {

@@ -1,31 +1,31 @@
 @use '../../../components/GlobalStyles/abstracts/mixins' as *;
 
 .wrapper {
-    width: var(--default-sidebar-width);
-    padding: 0px 0px;
     display: flex;
     flex-direction: column;
+
+    width: var(--default-sidebar-width);
+    padding: 0px 0px;
     background-color: #1e2936;
     box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
-    transform: translateX(-100%);
     transition: transform 0.3s ease;
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    z-index: 1000;
-
-    &.open {
-        transform: translateX(0);
-    }
+    z-index: 9999;
 
     .menu-wrapper {
         padding: 0;
     }
 
     @include mobile {
-        display: none;
+        transform: translateX(-100%);
+
+        &.open {
+            transform: translateX(0);
+        }
     }
 }
 

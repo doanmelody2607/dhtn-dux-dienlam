@@ -8,9 +8,11 @@ const cx = classNames.bind(styles);
 
 interface HeaderProps {
     className?: string;
+    isOpenSidebar: boolean;
+    onToggleSidebar: () => void;
 }
 
-const Header: FC<HeaderProps> = ({ className }) => {
+const Header: FC<HeaderProps> = ({ className, isOpenSidebar, onToggleSidebar }) => {
     const { pathname } = useLocation();
 
     const classes = cx('wrapper', className);
@@ -18,7 +20,9 @@ const Header: FC<HeaderProps> = ({ className }) => {
     return (
         <header className={classes}>
             <h2 className={cx('title')}>
-                <span className={cx('menu-bars')}>☰</span>
+                <span className={cx('menu-bars')} onClick={onToggleSidebar}>
+                    ☰
+                </span>
                 {headerTitles.get(pathname) ?? 'Sổ tay Văn phòng Đảng ủy xã Diên Lâm'}
             </h2>
             <h4 className={cx('user-role')}>Liên hệ: 1900.100có</h4>

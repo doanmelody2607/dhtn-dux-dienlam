@@ -20,8 +20,45 @@
     margin-left: var(--default-sidebar-width);
     background: url(../../assets/images/luquid_glass_bg001.webp) center center;
 
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.9);
+        transition: all 0.2s ease-in-out;
+
+        opacity: 0;
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    .close-icon {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 2.4rem;
+        color: var(--white);
+        transition: transform 0.4s ease;
+
+        transform: translateX(100px);
+    }
+
     @include mobile {
         margin: 0;
+
+        .overlay {
+            &.open {
+                opacity: 1;
+                z-index: 1000;
+                pointer-events: initial;
+            }
+        }
+
+        .close-icon {
+            &.open {
+                transform: translateX(0);
+                z-index: 9999;
+            }
+        }
     }
 }
 

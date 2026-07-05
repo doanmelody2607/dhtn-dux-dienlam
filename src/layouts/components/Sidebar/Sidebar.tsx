@@ -1,27 +1,25 @@
 import classNames from 'classnames/bind';
 import { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import images from '~/assets/images';
+import Image from '~/components/Image';
+import appRoutes from '~/config/routes';
 import Menu, { MenuItem } from './Menu';
 import styles from './Sidebar.module.scss';
-import Image from '~/components/Image';
-import images from '~/assets/images';
-import { useLocation } from 'react-router-dom';
-import appRoutes from '~/config/routes';
 
 const cx = classNames.bind(styles);
 
-interface SidebarProps {}
+interface SidebarProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
 
-const Sidebar: FC<SidebarProps> = () => {
+const Sidebar: FC<SidebarProps> = ({ isOpen, onClose }) => {
     const { pathname } = useLocation();
-    const [isOpenSidebar, setIsOpenSidebar] = useState<boolean>(false);
+    // const [isOpenSidebar, setIsOpenSidebar] = useState<boolean>(false);
     // const [expandedMenuId, setExpandedMenuId] = useState<string | null>(null);
 
     const [expandedMenus, setExpandedMenus] = useState<Set<string>>(new Set());
-
-    // Hiệu ứng Sidebar
-    useEffect(() => {
-        setIsOpenSidebar(true);
-    }, []);
 
     // Toggle submenu
     // const handleToggle = useCallback((id: string) => {
@@ -93,7 +91,7 @@ const Sidebar: FC<SidebarProps> = () => {
     }, [expandedMenus, handleToggle]);
 
     return (
-        <aside className={cx('wrapper', { open: isOpenSidebar })}>
+        <aside className={cx('wrapper', { open: isOpen })}>
             <div className={cx('sidebar-header')}>
                 <Image className={cx('co-dang')} src={images.coDang} alt="Cờ Đảng" />
                 <div>
