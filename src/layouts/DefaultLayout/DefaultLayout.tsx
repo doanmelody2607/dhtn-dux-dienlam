@@ -4,6 +4,7 @@ import Sidebar from '~/layouts/components/Sidebar';
 import styles from './DefaultLayout.module.scss';
 import Header from '../components/Header';
 import { useLocation } from 'react-router-dom';
+import { PhotoProvider } from 'react-photo-view';
 
 const cx = classNames.bind(styles);
 
@@ -22,30 +23,35 @@ const DefaultLayout: FC<DefaultLayoutProps> = ({ children }) => {
     };
 
     return (
-        <div className={cx('wrapper')}>
-            <div className={cx('container')}>
-                <Sidebar isOpen={isOpenSidebar} onClose={() => setIsOpenSidebar(false)} />
+        <PhotoProvider>
+            <div className={cx('wrapper')}>
+                <div className={cx('container')}>
+                    <Sidebar isOpen={isOpenSidebar} onClose={() => setIsOpenSidebar(false)} />
 
-                <div className={cx('right-section')}>
-                    <Header isOpenSidebar={isOpenSidebar} onToggleSidebar={handleToggleSidebar} />
-                    <div
-                        className={cx('overlay', {
-                            open: isOpenSidebar,
-                        })}
-                        onClick={() => setIsOpenSidebar(false)}
-                    ></div>
-                    <div
-                        className={cx('close-icon', {
-                            open: isOpenSidebar,
-                        })}
-                        onClick={() => setIsOpenSidebar(false)}
-                    >
-                        ✖
+                    <div className={cx('right-section')}>
+                        <Header
+                            isOpenSidebar={isOpenSidebar}
+                            onToggleSidebar={handleToggleSidebar}
+                        />
+                        <div
+                            className={cx('overlay', {
+                                open: isOpenSidebar,
+                            })}
+                            onClick={() => setIsOpenSidebar(false)}
+                        ></div>
+                        <div
+                            className={cx('close-icon', {
+                                open: isOpenSidebar,
+                            })}
+                            onClick={() => setIsOpenSidebar(false)}
+                        >
+                            ✖
+                        </div>
+                        <div className={cx('content')}>{children}</div>
                     </div>
-                    <div className={cx('content')}>{children}</div>
                 </div>
             </div>
-        </div>
+        </PhotoProvider>
     );
 };
 

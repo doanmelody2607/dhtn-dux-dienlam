@@ -1,5 +1,7 @@
 import classNames from 'classnames/bind';
 import { forwardRef, ImgHTMLAttributes, useState } from 'react';
+import { PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 import images from '~/assets/images';
 import styles from './Image.module.scss';
 
@@ -23,14 +25,16 @@ const Image = forwardRef<HTMLImageElement, ImageProps>(
         const classes = cx('wrapper', className);
 
         return (
-            <img
-                className={classes}
-                ref={ref}
-                src={fallback || src}
-                alt={alt}
-                {...props}
-                onError={handleError}
-            />
+            <PhotoView src={src}>
+                <img
+                    className={classes}
+                    ref={ref}
+                    src={fallback || src}
+                    alt={alt}
+                    {...props}
+                    onError={handleError}
+                />
+            </PhotoView>
         );
     },
 );
