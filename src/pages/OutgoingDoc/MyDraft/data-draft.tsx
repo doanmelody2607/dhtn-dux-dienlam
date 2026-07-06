@@ -95,8 +95,8 @@ const createDraftSteps: IStep[] = [
     {
         content: (
             <>
-                Sau khi chọn xong <Highlight content="Người xử lý" /> và{' '}
-                <Highlight content="Hành động" /> xong, ta sẽ có được giao diện như hình bên dưới
+                Sau khi chọn <Highlight content="Người xử lý" /> và{' '}
+                <Highlight content="Hành động" /> xong, ta sẽ có được giao diện như sau:
             </>
         ),
     },
@@ -114,7 +114,7 @@ const createDraftSteps: IStep[] = [
         content: (
             <>
                 Trước khi trình phê duyệt và ký duyệt, có thể chọn các cá nhân để xin ý kiến trong
-                phần <Highlight content="Danh sách cho ý kiến" /> như hình bên dưới.
+                phần <Highlight content="Danh sách cho ý kiến" />.
             </>
         ),
     },
@@ -150,8 +150,8 @@ const createDraftSteps: IStep[] = [
     {
         content: (
             <>
-                Sau khi đã chọn các cá nhân và đồng ý thêm vào danh sách, ta sẽ có được giao diện{' '}
-                <Highlight content="Danh sách cho ý kiến" /> như hình dưới đây
+                <Highlight content="Danh sách cho ý kiến" /> sau khi đã chọn các cá nhân và đồng ý
+                thêm vào danh sách
             </>
         ),
     },
