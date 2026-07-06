@@ -3,7 +3,7 @@ import Home from '~/pages/Home';
 import OutgoingDoc, { MyDraft } from '~/pages/OutgoingDoc';
 import FeedbackAction from '~/pages/OutgoingDoc/FeedbackAction';
 import RecordAction from '~/pages/OutgoingDoc/RecordAction';
-import SubmissionForm from '~/pages/SubmissionForm';
+import SubdAction from '~/pages/OutgoingDoc/SubAction';
 
 const appRoutes: AppRoute[] = [
     {
@@ -38,6 +38,12 @@ const appRoutes: AppRoute[] = [
                 path: '/van-ban-di/trinh-xin-y-kien',
                 component: FeedbackAction,
             },
+            {
+                id: 'c4d9b9d6-41ad-40a6-9c07-5732389292ac',
+                title: 'Thao tác Lưu lại và tạo phiếu trình',
+                path: '/van-ban-di/luu-lai-va-tao-phieu-trinh',
+                component: SubdAction,
+            },
         ],
     },
 
@@ -69,13 +75,13 @@ const appRoutes: AppRoute[] = [
     //     ],
     // },
 
-    {
-        id: '1a284a7e-3e65-419b-bece-5f982bd01f7d',
-        icon: '📝',
-        title: 'Phiếu trình',
-        path: '/phieu-trinh',
-        component: SubmissionForm,
-    },
+    // {
+    //     id: '1a284a7e-3e65-419b-bece-5f982bd01f7d',
+    //     icon: '📝',
+    //     title: 'Phiếu trình',
+    //     path: '/phieu-trinh',
+    //     component: SubmissionForm,
+    // },
     // {
     //     id: '42bb3ae2-64d2-413d-9fd9-b769eb0e01b3',
     //     icon: '💼',

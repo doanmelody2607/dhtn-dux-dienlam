@@ -7,7 +7,7 @@ interface FeedbackActionProps {}
 
 const FeedbackAction: FC<FeedbackActionProps> = () => {
     return (
-        <Card cardTitle="📥 Dự thảo được Lưu lại">
+        <Card cardTitle="📥 Dự thảo được Trình xin ý kiến">
             <Step steps={feedbackSteps} />
         </Card>
     );
