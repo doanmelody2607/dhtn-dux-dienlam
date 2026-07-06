@@ -49,6 +49,11 @@
         font-weight: 700;
     }
 
+    @include tablet {
+        left: var(--default-sidebar-width-tablet);
+        width: calc(100vw - var(--default-sidebar-width-tablet));
+    }
+
     @include mobile {
         left: 0;
         width: 100%;

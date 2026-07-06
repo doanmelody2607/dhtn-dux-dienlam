@@ -55,8 +55,9 @@ const createDraftSteps: IStep[] = [
         content: (
             <>
                 Click vào <Highlight content="Kiểm tra thể thức, chính tả" highlightType="do" />, hệ
-                thống sẽ mở tab kiểm tra lên, trong tab hiển thị nội dung văn bản và danh sách lỗi
-                văn bản
+                thống sẽ mở trình kiểm tra lên, trong đó sẽ hiển thị{' '}
+                <Highlight content="nội dung văn bản" /> và{' '}
+                <Highlight content="danh sách lỗi văn bản" />
             </>
         ),
     },
@@ -132,8 +133,8 @@ const createDraftSteps: IStep[] = [
         content: (
             <>
                 Click vào <Highlight content="Chọn cá nhân" highlightType="do" /> như{' '}
-                <Highlight content="Hình 2.7" />, tab danh sách cá nhân sẽ được mở lên như hình bên
-                dưới {'-->'} chọn cơ quan, đơn vị và các cá nhân tương ứng
+                <Highlight content="Hình 2.7" />, giao diện danh sách cá nhân sẽ được mở lên như
+                hình bên dưới {'-->'} chọn cơ quan, đơn vị và các cá nhân tương ứng
             </>
         ),
     },

@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 type CardProps = PropsWithChildren<{
     cardTitle: string;
-    description: string;
+    description?: string;
 }>;
 
 const Card: FC<CardProps> = ({ cardTitle, description, children }) => {
@@ -15,7 +15,7 @@ const Card: FC<CardProps> = ({ cardTitle, description, children }) => {
         <LiquidGlass className={cx('liquid-card')}>
             <div className={cx('card')}>
                 <h2 className={cx('title')}>{cardTitle}</h2>
-                <p className={cx('desc')}>{description}</p>
+                {description && <p className={cx('desc')}>{description}</p>}
 
                 {children}
             </div>

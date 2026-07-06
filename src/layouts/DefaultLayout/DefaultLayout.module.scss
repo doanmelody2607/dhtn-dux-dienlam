@@ -42,6 +42,10 @@
         transform: translateX(100px);
     }
 
+    @include tablet {
+        margin-left: var(--default-sidebar-width-tablet);
+    }
+
     @include mobile {
         margin: 0;
 
@@ -66,7 +70,8 @@
     width: 100%;
     max-width: 1200px;
     margin: var(--default-layout-header-height) auto 0px;
-    padding: 20px 0;
+    padding: 20px 20px;
+    height: auto;
 
     @include mobile {
         padding: 10px;

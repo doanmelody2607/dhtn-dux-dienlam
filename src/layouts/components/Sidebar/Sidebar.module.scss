@@ -20,7 +20,12 @@
         padding: 0;
     }
 
+    @include tablet {
+        width: var(--default-sidebar-width-tablet);
+    }
+
     @include mobile {
+        width: var(--default-sidebar-width);
         transform: translateX(-100%);
 
         &.open {

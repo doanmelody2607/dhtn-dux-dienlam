@@ -1,6 +1,8 @@
 import { AppRoute } from '~/commons/interfaces/routes';
 import Home from '~/pages/Home';
 import OutgoingDoc, { MyDraft } from '~/pages/OutgoingDoc';
+import FeedbackAction from '~/pages/OutgoingDoc/FeedbackAction';
+import RecordAction from '~/pages/OutgoingDoc/RecordAction';
 import SubmissionForm from '~/pages/SubmissionForm';
 
 const appRoutes: AppRoute[] = [
@@ -23,6 +25,18 @@ const appRoutes: AppRoute[] = [
                 title: 'Dự thảo của tôi',
                 path: '/van-ban-di/du-thao-cua-toi',
                 component: MyDraft,
+            },
+            {
+                id: 'c4d9b9d6-41ad-40a6-9c07-5732389292ac',
+                title: 'Thao tác Lưu lại',
+                path: '/van-ban-di/luu-lai',
+                component: RecordAction,
+            },
+            {
+                id: 'c4d9b9d6-41ad-40a6-9c07-5732389292ac',
+                title: 'Thao tác Trình xin ý kiến',
+                path: '/van-ban-di/trinh-xin-y-kien',
+                component: FeedbackAction,
             },
         ],
     },
