@@ -4,19 +4,14 @@ import Highlight from '~/components/Highlight';
 import LiquidGlass from '~/components/LiquidGlass';
 import Note from '~/components/Note';
 import Step from '~/components/Step';
-import StepItem from '~/components/Step/StepItem';
-import { dashboardPreview, loginSteps, logoutSteps } from './data-home';
+import { loginSteps, logoutSteps } from './data-home';
 
 interface HomeProps {}
 
 const Home: FC<HomeProps> = () => {
     return (
         <>
-            <Card
-                cardTitle="🔐 Đăng nhập vào Hệ thống"
-                description="Hệ thống Điều hành tác nghiệp được truy cập qua trình duyệt web. Dưới đây là
-                    hướng dẫn cách đăng nhập:"
-            >
+            <Card cardTitle="🔐 Đăng nhập vào Hệ thống">
                 <h3>Các bước đăng nhập</h3>
                 <Step steps={loginSteps}></Step>
 
@@ -32,13 +27,7 @@ const Home: FC<HomeProps> = () => {
                 </Note>
             </Card>
 
-            <Card
-                cardTitle="🏠 Trang chủ (Dashboard) — Màn hình tổng quan"
-                description="Sau khi đăng nhập thành công, bạn sẽ thấy màn hình Trang chủ như sau:"
-            >
-                <LiquidGlass>
-                    <StepItem stepItem={dashboardPreview} />
-                </LiquidGlass>
+            <Card cardTitle="🏠 Trang chủ (Dashboard) — Màn hình tổng quan">
                 <h3>Giải thích các vùng trên Trang chủ</h3>
                 <LiquidGlass>
                     <table>

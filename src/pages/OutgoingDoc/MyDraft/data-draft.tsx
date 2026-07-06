@@ -4,15 +4,14 @@ import Highlight from '~/components/Highlight';
 import Image from '~/components/Image';
 import ImageWithFigcaption from '~/components/ImageWithFigcaption';
 
-const myDraftPreview: IStep = {
-    content: (
-        <ImageWithFigcaption figcaption="Hình 2.1 - Danh sách văn bản dự thảo đã tạo">
-            <Image src={images.myDraft} alt="Văn bản dự thảo" />
-        </ImageWithFigcaption>
-    ),
-};
-
 const createDraftSteps: IStep[] = [
+    {
+        content: (
+            <ImageWithFigcaption figcaption="Hình 2.1 - Danh sách văn bản dự thảo đã tạo">
+                <Image src={images.myDraft} alt="Văn bản dự thảo" />
+            </ImageWithFigcaption>
+        ),
+    },
     {
         content: (
             <>
@@ -187,4 +186,4 @@ const createDraftSteps: IStep[] = [
     },
 ];
 
-export { createDraftSteps, myDraftPreview };
+export { createDraftSteps };

@@ -28,19 +28,19 @@ const appRoutes: AppRoute[] = [
             },
             {
                 id: 'c4d9b9d6-41ad-40a6-9c07-5732389292ac',
-                title: 'Thao tác Lưu lại',
+                title: 'Lưu lại',
                 path: '/van-ban-di/luu-lai',
                 component: RecordAction,
             },
             {
                 id: 'c4d9b9d6-41ad-40a6-9c07-5732389292ac',
-                title: 'Thao tác Trình xin ý kiến',
+                title: 'Trình xin ý kiến',
                 path: '/van-ban-di/trinh-xin-y-kien',
                 component: FeedbackAction,
             },
             {
                 id: 'c4d9b9d6-41ad-40a6-9c07-5732389292ac',
-                title: 'Thao tác Lưu lại và tạo phiếu trình',
+                title: 'Lưu lại và tạo phiếu trình',
                 path: '/van-ban-di/luu-lai-va-tao-phieu-trinh',
                 component: SubdAction,
             },

@@ -63,15 +63,14 @@ const loginSteps: IStep[] = [
     },
 ];
 
-const dashboardPreview: IStep = {
-    content: (
-        <ImageWithFigcaption figcaption="Hình 1.3 - Trang chủ hệ thống: hiển thị thống kê và các chức năng chính">
-            <Image src={images.dashboard} alt="Màn hình dashboard" />
-        </ImageWithFigcaption>
-    ),
-};
-
 const logoutSteps: IStep[] = [
+    {
+        content: (
+            <ImageWithFigcaption figcaption="Hình 1.3 - Trang chủ hệ thống: hiển thị thống kê và các chức năng chính">
+                <Image src={images.dashboard} alt="Màn hình dashboard" />
+            </ImageWithFigcaption>
+        ),
+    },
     {
         content: (
             <>
@@ -89,4 +88,4 @@ const logoutSteps: IStep[] = [
     },
 ];
 
-export { loginSteps, logoutSteps, dashboardPreview };
+export { loginSteps, logoutSteps };

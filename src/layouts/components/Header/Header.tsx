@@ -3,6 +3,7 @@ import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
 import { headerTitles } from '~/config/routes';
 import styles from './Header.module.scss';
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 const cx = classNames.bind(styles);
 
@@ -21,11 +22,12 @@ const Header: FC<HeaderProps> = ({ className, isOpenSidebar, onToggleSidebar }) 
         <header className={classes}>
             <h2 className={cx('title')}>
                 <span className={cx('menu-bars')} onClick={onToggleSidebar}>
-                    ☰
+                    <MenuOutlinedIcon sx={{ fontSize: 24 }} />
                 </span>
+
                 {headerTitles.get(pathname) ?? 'Sổ tay Văn phòng Đảng ủy xã Diên Lâm'}
             </h2>
-            <h4 className={cx('user-role')}>Liên hệ: 1900.100có</h4>
+            {/* <h4 className={cx('user-role')}>Liên hệ: 1900.100có</h4> */}
         </header>
     );
 };

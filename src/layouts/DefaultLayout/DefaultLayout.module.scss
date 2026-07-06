@@ -59,6 +59,7 @@
 
         .close-icon {
             &.open {
+                color: var(--white) !important;
                 transform: translateX(0);
                 z-index: 101;
             }
