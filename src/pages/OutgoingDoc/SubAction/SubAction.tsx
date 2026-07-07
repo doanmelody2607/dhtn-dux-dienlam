@@ -10,7 +10,7 @@ interface SubActionProps {}
 const SubdAction: FC<SubActionProps> = () => {
     return (
         <div className={cx('wrapper')}>
-            <Card cardTitle="📥 Dự thảo được Lưu lại và tạo phiếu trình">
+            <Card cardTitle=" Dự thảo được Lưu lại và tạo phiếu trình">
                 <h3>Đang trong quá trình cập nhật......................</h3>
             </Card>
         </div>

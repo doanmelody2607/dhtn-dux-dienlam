@@ -31,7 +31,7 @@ const recordSteps: IStep[] = [
             <>
                 Thông qua tác vụ{' '}
                 <Highlight content="Xem thông tin chi tiết của dự thảo" highlightType="xanh" />, ta
-                có thể theo dõi nhanh được các thông tin của dự thảo một các nhanh chóng.
+                có thể theo dõi nhanh được các thông tin của dự thảo một cách nhanh chóng.
             </>
         ),
     },

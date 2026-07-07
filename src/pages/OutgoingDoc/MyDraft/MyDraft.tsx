@@ -7,7 +7,7 @@ interface MyDraftProps {}
 
 const MyDraft: FC<MyDraftProps> = () => {
     return (
-        <Card cardTitle="📥 Dự thảo của tôi">
+        <Card cardTitle="Dự thảo của tôi">
             <Step steps={createDraftSteps} />
         </Card>
     );

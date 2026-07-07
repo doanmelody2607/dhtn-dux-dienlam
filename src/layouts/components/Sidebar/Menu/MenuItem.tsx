@@ -18,6 +18,8 @@ const MenuItem: FC<MenuItemProps> = ({ menuItem, level = 0, expandedMenus, onTog
 
     const isExpanded = expandedMenus.has(menuItem.id);
 
+    const Icon = menuItem.icon;
+
     const handleClick = useCallback(
         (e: React.MouseEvent<HTMLAnchorElement>) => {
             if (hasChildren) {
@@ -40,7 +42,7 @@ const MenuItem: FC<MenuItemProps> = ({ menuItem, level = 0, expandedMenus, onTog
                 onClick={handleClick}
             >
                 <div className={cx('menu-title')}>
-                    <span className={cx('icon')}>{menuItem.icon}</span>
+                    {Icon && <Icon sx={{ fontSize: 24 }} />}
                     <span className={cx('label')}>{menuItem.title}</span>
                 </div>
 

@@ -119,7 +119,7 @@ const LichHop: FC<LichHopProps> = () => {
                     <li>Mở màn hình Lịch tuần cơ quan.</li>
                     <li>
                         Nhìn lên thanh công cụ phía trên bên phải, bấm vào nút biểu tượng{' '}
-                        <strong>Tải xuống (📥 - Xuất Word)</strong>.
+                        <strong>Tải xuống ( - Xuất Word)</strong>.
                     </li>
                     <li>
                         Hệ thống sẽ tự động xuất toàn bộ lịch của tuần hiện tại ra một file Word

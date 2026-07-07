@@ -10,7 +10,7 @@ const VanBanDen: FC<VanBanDenProps> = () => {
     return (
         <div className={cx('page')}>
             <div className={cx('card')}>
-                <h2>📥 Văn bản đến — Tổng quan</h2>
+                <h2> Văn bản đến — Tổng quan</h2>
                 <p>
                     Module <strong>Văn bản đến</strong> là nơi bạn tiếp nhận, đọc và xử lý các văn
                     bản được gửi đến cho bạn hoặc đơn vị.

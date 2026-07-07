@@ -30,6 +30,14 @@ table {
     border-collapse: collapse;
     font-size: 1.25rem;
     border-radius: 16px;
+
+    thead {
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    // tbody {
+    //     border-radius: inherit;
+    // }
 }
 
 th,
@@ -54,5 +62,15 @@ tr {
 
     &:last-child {
         border-bottom: none;
+
+        td {
+            &:first-child {
+                border-radius: 0 0 0 16px;
+            }
+
+            &:last-child {
+                border-radius: 0 0 16px 0;
+            }
+        }
     }
 }

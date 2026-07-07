@@ -15,17 +15,20 @@ interface HeaderProps {
 
 const Header: FC<HeaderProps> = ({ className, isOpenSidebar, onToggleSidebar }) => {
     const { pathname } = useLocation();
+    const header = headerTitles.get(pathname);
+    const Icon = header?.icon;
 
     const classes = cx('wrapper', className);
 
     return (
         <header className={classes}>
             <h2 className={cx('title')}>
-                <span className={cx('menu-bars')} onClick={onToggleSidebar}>
+                <div className={cx('menu-bars')} onClick={onToggleSidebar}>
                     <MenuOutlinedIcon sx={{ fontSize: 24 }} />
-                </span>
+                </div>
 
-                {headerTitles.get(pathname) ?? 'Sổ tay Văn phòng Đảng ủy xã Diên Lâm'}
+                {Icon && <Icon sx={{ fontSize: 24 }} />}
+                <span>{header?.title}</span>
             </h2>
             {/* <h4 className={cx('user-role')}>Liên hệ: 1900.100có</h4> */}
         </header>

@@ -13,7 +13,7 @@ const VanBanChoXuLy: FC<VanBanChoXuLyProps> = () => {
         <div className={cx('page')}>
             <div className={cx('page')}>
                 <div className={cx('card')}>
-                    <h2>📥 Văn bản chờ xử lý</h2>
+                    <h2> Văn bản chờ xử lý</h2>
                     <p>
                         <span className={cx('path')}>VĂN BẢN ĐẾN → Văn bản chờ xử lý</span>
                     </p>

@@ -11,7 +11,7 @@ interface HomeProps {}
 const Home: FC<HomeProps> = () => {
     return (
         <>
-            <Card cardTitle="🔐 Đăng nhập vào Hệ thống">
+            <Card cardTitle="Đăng nhập vào hệ thống">
                 <h3>Các bước đăng nhập</h3>
                 <Step steps={loginSteps}></Step>
 
@@ -31,62 +31,66 @@ const Home: FC<HomeProps> = () => {
                 <h3>Giải thích các vùng trên Trang chủ</h3>
                 <LiquidGlass>
                     <table>
-                        <tr>
-                            <th>Vùng</th>
-                            <th>Mô tả chi tiết</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>Menu bên trái</strong>
-                            </td>
-                            <td>
-                                Danh sách tất cả chức năng: Văn bản đến, Văn bản đi, Phiếu trình,
-                                Lịch họp, Nhiệm vụ... Bấm vào tên chức năng để mở.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>Thanh trên cùng (đỏ)</strong>
-                            </td>
-                            <td>
-                                Hiển thị tên đơn vị, nút tìm kiếm 🔍, thông báo 🔔, làm mới 🔄. Bấm
-                                vào tên bạn ở góc phải để đổi mật khẩu hoặc đăng xuất.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>Các ô thống kê</strong>
-                            </td>
-                            <td>
-                                Số lượng văn bản đến/đi/phiếu trình theo trạng thái.{' '}
-                                <Highlight content="Bấm trực tiếp vào con số" /> để mở danh sách
-                                tương ứng — rất nhanh!
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>Nhiệm vụ nhận được</strong>
-                            </td>
-                            <td>
-                                Biểu đồ tiến độ nhiệm vụ cá nhân — giúp bạn nắm nhanh tổng quan công
-                                việc được giao.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>Lịch họp sắp tới</strong>
-                            </td>
-                            <td>Hiển thị các cuộc họp trong tuần bạn cần tham dự.</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>Các tab phía trên</strong>
-                            </td>
-                            <td>
-                                Mỗi chức năng mở ra sẽ là một tab riêng. Bạn có thể chuyển qua lại
-                                giữa các tab, hoặc bấm X để đóng tab.
-                            </td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Vùng</th>
+                                <th>Mô tả chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Menu bên trái</strong>
+                                </td>
+                                <td>
+                                    Danh sách tất cả chức năng: Văn bản đến, Văn bản đi, Phiếu
+                                    trình, Lịch họp, Nhiệm vụ... Bấm vào tên chức năng để mở.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Thanh trên cùng (đỏ)</strong>
+                                </td>
+                                <td>
+                                    Hiển thị tên đơn vị, nút tìm kiếm 🔍, thông báo 🔔, làm mới 🔄.
+                                    Bấm vào tên bạn ở góc phải để đổi mật khẩu hoặc đăng xuất.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Các ô thống kê</strong>
+                                </td>
+                                <td>
+                                    Số lượng văn bản đến/đi/phiếu trình theo trạng thái.{' '}
+                                    <Highlight content="Bấm trực tiếp vào con số" /> để mở danh sách
+                                    tương ứng — rất nhanh!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Nhiệm vụ nhận được</strong>
+                                </td>
+                                <td>
+                                    Biểu đồ tiến độ nhiệm vụ cá nhân — giúp bạn nắm nhanh tổng quan
+                                    công việc được giao.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Lịch họp sắp tới</strong>
+                                </td>
+                                <td>Hiển thị các cuộc họp trong tuần bạn cần tham dự.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Các tab phía trên</strong>
+                                </td>
+                                <td>
+                                    Mỗi chức năng mở ra sẽ là một tab riêng. Bạn có thể chuyển qua
+                                    lại giữa các tab, hoặc bấm X để đóng tab.
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </LiquidGlass>
                 <h3>Đăng xuất</h3>

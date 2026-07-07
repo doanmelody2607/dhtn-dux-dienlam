@@ -7,7 +7,7 @@ interface RecordActionProps {}
 
 const RecordAction: FC<RecordActionProps> = () => {
     return (
-        <Card cardTitle="📥 Dự thảo được Lưu lại">
+        <Card cardTitle="Dự thảo được Lưu lại">
             <Step steps={recordSteps} />
         </Card>
     );
