@@ -5,14 +5,14 @@ import styles from './ImageWithFigcaption.module.scss';
 const cx = classNames.bind(styles);
 
 type ImageWithFigcaptionProps = PropsWithChildren<{
-    figcaption: string;
+    figcaption?: string;
 }>;
 
 const ImageWithFigcaption: FC<ImageWithFigcaptionProps> = ({ figcaption, children }) => {
     return (
         <div className={cx('wrapper')}>
             {children}
-            <div className={cx('figcaption')}>{figcaption}</div>
+            {figcaption && <div className={cx('figcaption')}>{figcaption}</div>}
         </div>
     );
 };

@@ -37,7 +37,7 @@ const feedbackSteps: IStep[] = [
     },
     {
         content: (
-            <ImageWithFigcaption figcaption="Hình 4.2 - Giao diện trang chủ của người được trình xin ý kiến">
+            <ImageWithFigcaption figcaption="Hình 4.2 - Giao diện trang chủ của cá nhân được trình xin ý kiến - Phan Thị Lệ Quyên">
                 <Image src={images.myDraftAddFile13} alt="Văn bản dự thảo - Thông tin chi tiết" />
             </ImageWithFigcaption>
         ),
@@ -103,7 +103,7 @@ const feedbackSteps: IStep[] = [
     },
     {
         content: (
-            <ImageWithFigcaption figcaption="Hình 4.6 - Giao diện trang chủ của người trình xin ý kiến">
+            <ImageWithFigcaption figcaption="Hình 4.6 - Giao diện trang chủ của cá nhân trình xin ý kiến - Vũ Ngọc Đoàn">
                 <Image src={images.myDraftAddFile17} alt="Văn bản dự thảo - Thông tin chi tiết" />
             </ImageWithFigcaption>
         ),

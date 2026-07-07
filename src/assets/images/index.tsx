@@ -29,6 +29,18 @@ const images: IImages = {
     myDraftAddFile16: require('~/assets/images/my-draft_create_16.png'),
     myDraftAddFile17: require('~/assets/images/my-draft_create_17.png'),
     myDraftAddFile18: require('~/assets/images/my-draft_create_18.png'),
+    myDraftAddFile19: require('~/assets/images/my-draft_create_19.png'),
+    myDraftAddFile20: require('~/assets/images/my-draft_create_20.png'),
+    myDraftAddFile21: require('~/assets/images/my-draft_create_21.png'),
+    myDraftAddFile22: require('~/assets/images/my-draft_create_22.png'),
+    myDraftAddFile23: require('~/assets/images/my-draft_create_23.png'),
+    myDraftAddFile24: require('~/assets/images/my-draft_create_24.png'),
+    myDraftAddFile25: require('~/assets/images/my-draft_create_25.png'),
+    myDraftAddFile26: require('~/assets/images/my-draft_create_26.png'),
+
+    myDraftSubForm01: require('~/assets/images/my-draft_create_subform_01.png'),
+    myDraftSubForm02: require('~/assets/images/my-draft_create_subform_02.png'),
+    myDraftSubForm03: require('~/assets/images/my-draft_create_subform_03.png'),
 
     taskManagement: require('~/assets/images/quan-ly-nhiem-vu-dhtn.png'),
     taskManagementAdvance: require('~/assets/images/quan-ly-nhiem-vu-tim-kiem-nang-cao.png'),

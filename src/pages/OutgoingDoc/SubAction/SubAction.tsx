@@ -1,20 +1,16 @@
-import classNames from 'classnames/bind';
 import { FC } from 'react';
 import Card from '~/components/Card';
-import styles from './SubAction.module.scss';
+import Step from '~/components/Step';
+import { submissionFormSteps } from './data-submission-form';
 
-const cx = classNames.bind(styles);
+interface FeedbackActionProps {}
 
-interface SubActionProps {}
-
-const SubdAction: FC<SubActionProps> = () => {
+const FeedbackAction: FC<FeedbackActionProps> = () => {
     return (
-        <div className={cx('wrapper')}>
-            <Card cardTitle=" Dự thảo được Lưu lại và tạo phiếu trình">
-                <h3>Đang trong quá trình cập nhật......................</h3>
-            </Card>
-        </div>
+        <Card cardTitle="Dự thảo được Trình xin ý kiến">
+            <Step steps={submissionFormSteps} />
+        </Card>
     );
 };
 
-export default SubdAction;
+export default FeedbackAction;

@@ -5,6 +5,7 @@ import styles from './DefaultLayout.module.scss';
 import Header from '../components/Header';
 import { useLocation } from 'react-router-dom';
 import { PhotoProvider } from 'react-photo-view';
+import CloseIcon from '@mui/icons-material/Close';
 
 const cx = classNames.bind(styles);
 
@@ -45,7 +46,7 @@ const DefaultLayout: FC<DefaultLayoutProps> = ({ children }) => {
                             })}
                             onClick={() => setIsOpenSidebar(false)}
                         >
-                            ✖
+                            <CloseIcon sx={{ fontSize: 28 }} />
                         </div>
                         <div className={cx('content')}>{children}</div>
                     </div>

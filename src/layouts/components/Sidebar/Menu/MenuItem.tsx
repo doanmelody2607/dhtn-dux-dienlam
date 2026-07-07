@@ -1,3 +1,4 @@
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import classNames from 'classnames/bind';
 import { FC, useCallback } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -47,13 +48,13 @@ const MenuItem: FC<MenuItemProps> = ({ menuItem, level = 0, expandedMenus, onTog
                 </div>
 
                 {hasChildren && (
-                    <span
-                        className={cx('menu-dropdown', {
-                            rotate: isExpanded,
-                        })}
-                    >
-                        ▾
-                    </span>
+                    <ArrowDropDownIcon
+                        sx={{
+                            fontSize: 24,
+                            transform: `${isExpanded ? 'rotate(-180deg)' : 'rotate(0deg)'}`,
+                            transition: 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
+                        }}
+                    />
                 )}
             </NavLink>
 

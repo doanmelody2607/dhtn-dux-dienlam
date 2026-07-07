@@ -8,6 +8,10 @@
         border-radius: inherit;
         position: relative;
         z-index: 2;
+
+        + img {
+            margin-top: 12px;
+        }
     }
 
     .figcaption {

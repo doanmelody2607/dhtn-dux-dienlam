@@ -23,7 +23,7 @@
     .overlay {
         position: fixed;
         inset: 0;
-        background: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.9);
         transition: all 0.2s ease-in-out;
 
         opacity: 0;
@@ -59,7 +59,6 @@
 
         .close-icon {
             &.open {
-                color: var(--white) !important;
                 transform: translateX(0);
                 z-index: 101;
             }

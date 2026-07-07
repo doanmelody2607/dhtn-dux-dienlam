@@ -23,9 +23,9 @@
     z-index: 99;
 
     .menu-bars {
-        line-height: 1rem;
         padding: 10px 12px;
         display: none;
+        line-height: 1rem;
     }
 
     .title {
@@ -34,7 +34,7 @@
         color: var(--color_1);
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 6px;
     }
 
     .user-role {

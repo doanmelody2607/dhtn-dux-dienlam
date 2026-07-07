@@ -1,9 +1,9 @@
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import classNames from 'classnames/bind';
 import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
 import { headerTitles } from '~/config/routes';
 import styles from './Header.module.scss';
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 const cx = classNames.bind(styles);
 
