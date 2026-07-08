@@ -12,12 +12,12 @@ const cx = classNames.bind(styles);
 type DefaultLayoutProps = PropsWithChildren;
 
 const DefaultLayout: FC<DefaultLayoutProps> = ({ children }) => {
-    const location = useLocation();
+    const { pathname } = useLocation();
     const [isOpenSidebar, setIsOpenSidebar] = useState<boolean>(false);
 
     useEffect(() => {
         setIsOpenSidebar(false);
-    }, [location.pathname]);
+    }, [pathname]);
 
     const handleToggleSidebar = () => {
         setIsOpenSidebar((prev) => !prev);
