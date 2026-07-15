@@ -7,6 +7,7 @@ import Home from '~/pages/Home';
 import OutgoingDoc, { MyDraft } from '~/pages/OutgoingDoc';
 import FeedbackAction from '~/pages/OutgoingDoc/FeedbackAction';
 import RecordAction from '~/pages/OutgoingDoc/RecordAction';
+import Signature from '~/pages/OutgoingDoc/Signature';
 import SubdAction from '~/pages/OutgoingDoc/SubAction';
 
 interface HeaderInfo {
@@ -52,6 +53,12 @@ const appRoutes: AppRoute[] = [
                 title: 'Lưu lại và tạo phiếu trình',
                 path: '/van-ban-di/luu-lai-va-tao-phieu-trinh',
                 component: SubdAction,
+            },
+            {
+                id: '0b2666d6-ecf7-4f15-8e2c-3cf27ea75044',
+                title: 'Trình ký',
+                path: '/van-ban-di/trinh-ky',
+                component: Signature,
             },
         ],
     },
