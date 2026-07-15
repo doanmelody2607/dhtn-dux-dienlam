@@ -1,4 +1,5 @@
 import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
+import GavelIcon from '@mui/icons-material/Gavel';
 import HomeIcon from '@mui/icons-material/Home';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
 import { SvgIconTypeMap } from '@mui/material/SvgIcon';
@@ -7,7 +8,8 @@ import Home from '~/pages/Home';
 import OutgoingDoc, { MyDraft } from '~/pages/OutgoingDoc';
 import FeedbackAction from '~/pages/OutgoingDoc/FeedbackAction';
 import RecordAction from '~/pages/OutgoingDoc/RecordAction';
-import Signature from '~/pages/OutgoingDoc/Signature';
+import SignatureAction from '~/pages/OutgoingDoc/SignatureAction';
+import StampAction from '~/pages/OutgoingDoc/StampAction';
 import SubdAction from '~/pages/OutgoingDoc/SubAction';
 
 interface HeaderInfo {
@@ -58,9 +60,16 @@ const appRoutes: AppRoute[] = [
                 id: '0b2666d6-ecf7-4f15-8e2c-3cf27ea75044',
                 title: 'Trình ký',
                 path: '/van-ban-di/trinh-ky',
-                component: Signature,
+                component: SignatureAction,
             },
         ],
+    },
+    {
+        id: 'f8beed04-1db8-4347-a816-7599320bb08b',
+        icon: GavelIcon,
+        title: 'Cấp số, đóng dấu',
+        path: '/van-ban-di/cap-so',
+        component: StampAction,
     },
 
     // {

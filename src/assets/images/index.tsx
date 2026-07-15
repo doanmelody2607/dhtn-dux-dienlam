@@ -42,7 +42,7 @@ const images: IImages = {
     myDraftSubForm02: require('~/assets/images/my-draft-page/my-draft_create_subform_02.png'),
     myDraftSubForm03: require('~/assets/images/my-draft-page/my-draft_create_subform_03.png'),
 
-    //Trinh-ky
+    // Trình ký
     trinhKy001: require('~/assets/images/trinh-ky/trinh-ky-001.png'),
     trinhKy002: require('~/assets/images/trinh-ky/trinh-ky-002.png'),
     trinhKy003: require('~/assets/images/trinh-ky/trinh-ky-003.png'),
@@ -51,6 +51,15 @@ const images: IImages = {
     trinhKy007: require('~/assets/images/trinh-ky/trinh-ky-007.png'),
     trinhKy008: require('~/assets/images/trinh-ky/trinh-ky-008.png'),
     trinhKy009: require('~/assets/images/trinh-ky/trinh-ky-009.png'),
+
+    // Cấp số
+    capSo001: require('~/assets/images/cap-so/cap-so-001.png'),
+    capSo002: require('~/assets/images/cap-so/cap-so-002.png'),
+    capSo003: require('~/assets/images/cap-so/cap-so-003.png'),
+    capSo004: require('~/assets/images/cap-so/cap-so-004.png'),
+    capSo005: require('~/assets/images/cap-so/cap-so-005.png'),
+    capSo006: require('~/assets/images/cap-so/cap-so-006.png'),
+    capSo007: require('~/assets/images/cap-so/cap-so-007.png'),
 
     taskManagement: require('~/assets/images/quan-ly-nhiem-vu-dhtn.png'),
     taskManagementAdvance: require('~/assets/images/quan-ly-nhiem-vu-tim-kiem-nang-cao.png'),

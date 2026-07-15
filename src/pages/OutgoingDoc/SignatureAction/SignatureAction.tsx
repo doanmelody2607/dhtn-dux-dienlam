@@ -3,14 +3,14 @@ import Card from '~/components/Card';
 import Step from '~/components/Step';
 import { signatureSteps } from './data-signature';
 
-interface SignatureProps {}
+interface SignatureActionProps {}
 
-const Signature: FC<SignatureProps> = () => {
+const SignatureAction: FC<SignatureActionProps> = () => {
     return (
-        <Card cardTitle="Dự thảo được Trình xin ý kiến">
+        <Card cardTitle="Dự thảo được Trình ký">
             <Step steps={signatureSteps} />
         </Card>
     );
 };
 
-export default Signature;
+export default SignatureAction;
