@@ -17,6 +17,8 @@ import RecordAction from '~/pages/OutgoingDoc/RecordAction';
 import SignatureAction from '~/pages/OutgoingDoc/SignatureAction';
 import StampAction from '~/pages/OutgoingDoc/StampAction';
 import SubdAction from '~/pages/OutgoingDoc/SubAction';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import MeetingCalendar from '~/pages/MeetingCalendar';
 
 interface HeaderInfo {
     title: string;
@@ -109,42 +111,14 @@ const appRoutes: AppRoute[] = [
             },
         ],
     },
+    {
+        id: '75e934c2-7b5a-4fc6-b4bb-c16ff787ca75',
+        icon: CalendarMonthIcon,
+        title: 'Lịch họp',
+        path: '/lich-hop',
+        component: MeetingCalendar,
+    },
 
-    // {
-    //     id: '4c2d9e65-f3c6-4f7d-b75b-91491d88b54b',
-    //     icon: '',
-    //     title: 'Văn bản đến',
-    //     component: VanBanDen,
-    //     children: [
-    //         {
-    //             id: 'e514e662-fa71-4d74-8696-c9bbddaffbb4',
-    //             title: 'Văn bản chờ xử lý',
-    //             path: '/van-ban-den/cho-xu-ly',
-    //             component: VanBanChoXuLy,
-    //         },
-    //         {
-    //             id: 'e514e882-fa71-4d74-8696-c9bbddafafc4',
-    //             title: 'Văn bản đã xử lý',
-    //             path: '/van-ban-den/da-xu-ly',
-    //             component: VanBanDaXuLy,
-    //         },
-
-    //         {
-    //             id: 'incoming-doc-rejected',
-    //             title: 'Văn bản bị trả lại',
-    //             path: '/van-ban-den/bi-tra-lai',
-    //             component: VanBanBiTraLai,
-    //         },
-    //     ],
-    // },
-
-    // {
-    //     id: '1a284a7e-3e65-419b-bece-5f982bd01f7d',
-    //     icon: '📝',
-    //     title: 'Phiếu trình',
-    //     path: '/phieu-trinh',
-    //     component: SubmissionForm,
-    // },
     // {
     //     id: '42bb3ae2-64d2-413d-9fd9-b769eb0e01b3',
     //     icon: '💼',

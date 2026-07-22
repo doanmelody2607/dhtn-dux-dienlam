@@ -16,8 +16,8 @@ const createDraftSteps: IStep[] = [
         content: (
             <>
                 Tại giao diện <strong>Danh sách văn bản dự thảo</strong>, click vào nút có hình{' '}
-                <Highlight content="dấu cộng" highlightType="do" /> như{' '}
-                <Highlight content="Hình 2.1" />, hệ thống sẽ mở trang{' '}
+                <Highlight content="╋" highlightType="do" /> như <Highlight content="Hình 2.1" />,
+                hệ thống sẽ mở trang{' '}
                 <Highlight content="Tạo mới văn bản dự thảo" highlightType="xanh" />
             </>
         ),

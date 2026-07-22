@@ -9,7 +9,7 @@ const images: IImages = {
     loginOTP: require('~/assets/images/home-page/login-otp.png'),
     dashboard: require('~/assets/images/home-page/dashboard.png'),
 
-    // OutgoingDoc
+    // Văn bản đi
     myDraft: require('~/assets/images/my-draft-page/my-draft.png'),
     myDraftAddFile01: require('~/assets/images/my-draft-page/my-draft_create_01.png'),
     myDraftAddFile02: require('~/assets/images/my-draft-page/my-draft_create_02.png'),
@@ -61,7 +61,7 @@ const images: IImages = {
     capSo006: require('~/assets/images/cap-so/cap-so-006.png'),
     capSo007: require('~/assets/images/cap-so/cap-so-007.png'),
 
-    // Cấp số
+    // Văn bản đến
     vanBanDen001: require('~/assets/images/van-ban-den/incomming_doc_001.png'),
     vanBanDen002: require('~/assets/images/van-ban-den/incomming_doc_002.png'),
     vanBanDen003: require('~/assets/images/van-ban-den/incomming_doc_003.png'),
@@ -79,6 +79,15 @@ const images: IImages = {
     vanBanDen015: require('~/assets/images/van-ban-den/incomming_doc_015.png'),
     vanBanDen016: require('~/assets/images/van-ban-den/incomming_doc_016.png'),
     vanBanDen017: require('~/assets/images/van-ban-den/incomming_doc_017.png'),
+
+    // Lịch họp
+    lichHop000: require('~/assets/images/lich-hop/meeting_calendar_000.png'),
+    lichHop001: require('~/assets/images/lich-hop/meeting_calendar_001.png'),
+    lichHop002: require('~/assets/images/lich-hop/meeting_calendar_002.png'),
+    lichHop003: require('~/assets/images/lich-hop/meeting_calendar_003.png'),
+    lichHop004: require('~/assets/images/lich-hop/meeting_calendar_004.png'),
+    lichHop005: require('~/assets/images/lich-hop/meeting_calendar_005.png'),
+    lichHop006: require('~/assets/images/lich-hop/meeting_calendar_006.png'),
 
     taskManagement: require('~/assets/images/quan-ly-nhiem-vu-dhtn.png'),
     taskManagementAdvance: require('~/assets/images/quan-ly-nhiem-vu-tim-kiem-nang-cao.png'),
