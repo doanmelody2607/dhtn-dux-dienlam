@@ -1,10 +1,16 @@
+import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder';
 import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
-import GavelIcon from '@mui/icons-material/Gavel';
 import HomeIcon from '@mui/icons-material/Home';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
 import { SvgIconTypeMap } from '@mui/material/SvgIcon';
 import { AppRoute } from '~/commons/interfaces/routes';
 import Home from '~/pages/Home';
+import IncomingDoc, {
+    AwaitingDocs,
+    ReceptionAction,
+    SaveAction,
+    TagAction,
+} from '~/pages/IncomingDoc';
 import OutgoingDoc, { MyDraft } from '~/pages/OutgoingDoc';
 import FeedbackAction from '~/pages/OutgoingDoc/FeedbackAction';
 import RecordAction from '~/pages/OutgoingDoc/RecordAction';
@@ -62,14 +68,46 @@ const appRoutes: AppRoute[] = [
                 path: '/van-ban-di/trinh-ky',
                 component: SignatureAction,
             },
+            {
+                id: 'f8beed04-1db8-4347-a816-7599320bb08b',
+                // icon: GavelIcon,
+                title: 'Cấp số, đóng dấu',
+                path: '/van-ban-di/cap-so',
+                component: StampAction,
+            },
         ],
     },
     {
-        id: 'f8beed04-1db8-4347-a816-7599320bb08b',
-        icon: GavelIcon,
-        title: 'Cấp số, đóng dấu',
-        path: '/van-ban-di/cap-so',
-        component: StampAction,
+        id: 'd35d48ae-3f9a-40eb-854b-bf2a23c3aae8',
+        icon: CreateNewFolderIcon,
+        title: 'Văn bản đến',
+        component: IncomingDoc,
+        children: [
+            {
+                id: '6576887c-9a9e-4a52-a766-ba484653a2c3',
+                title: 'Văn bản chờ tiếp nhận',
+                path: '/van-ban-den/cho-tiep-nhan',
+                component: AwaitingDocs,
+            },
+            {
+                id: '0f18ed10-f059-4c91-bd1c-32384aeeabf8',
+                title: 'Tiếp nhận',
+                path: '/van-ban-den/tiep-nhan',
+                component: ReceptionAction,
+            },
+            {
+                id: '551759fb-a5f6-43ea-a165-466a0df15f95',
+                title: 'Gắn tag',
+                path: '/van-ban-den/gan-tag',
+                component: TagAction,
+            },
+            {
+                id: '4ddaebb6-6d6b-4ee9-8112-87b77728593d',
+                title: 'Lưu tài liệu cá nhân',
+                path: '/van-ban-den/luu-tai-lieu-ca-nhan',
+                component: SaveAction,
+            },
+        ],
     },
 
     // {

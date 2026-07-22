@@ -1,12 +1,12 @@
 import classNames from 'classnames/bind';
 import { FC } from 'react';
-import styles from './VanBanDen.module.scss';
+import styles from './IncomingDoc.module.scss';
 
 const cx = classNames.bind(styles);
 
-interface VanBanDenProps {}
+interface IncomingDocProps {}
 
-const VanBanDen: FC<VanBanDenProps> = () => {
+const IncomingDoc: FC<IncomingDocProps> = () => {
     return (
         <div className={cx('page')}>
             <div className={cx('card')}>
@@ -62,4 +62,4 @@ const VanBanDen: FC<VanBanDenProps> = () => {
     );
 };
 
-export default VanBanDen;
+export default IncomingDoc;
